@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <title>Página principal - Codo a Codo</title>
+      crossorigin="anonymous"/>
+  <title>Página principal - Codo a Codo</title>
   </head>
+
+
   <body>
+
+    
+    <!-- Navegación     -->
     <header>
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light border-bottom-0 border border-dark"
@@ -23,6 +23,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
+              class="mx-4"
               src="./resources/img/codoAcodo.png"
               alt="Codo a Codo"
               width="120px"
@@ -36,15 +37,22 @@
             data-bs-target="#navbarScroll"
             aria-controls="navbarScroll"
             aria-expanded="true"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul
               class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 100px">
-                <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold; font-size:1.25rem;">Programa</a>
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="font-weight: bold; font-size: 1.25rem"
+                  >Programa</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -54,26 +62,54 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  style="font-weight: bold; font-size:1.25rem;">
+                  style="font-weight: bold; font-size: 1.25rem"
+                >
                   Material
                 </a>
                 <ul
                   class="dropdown-menu"
-                  aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="#" style="font-weight: bold; font-size:1rem;">HTML</a></li>
+                  aria-labelledby="navbarScrollingDropdown"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      style="font-weight: bold; font-size: 1rem"
+                      >HTML</a
+                    >
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#" style="font-weight: bold; font-size:1rem;">CSS</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      style="font-weight: bold; font-size: 1rem"
+                      >CSS</a
+                    >
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#" style="font-weight: bold; font-size:1rem;">JavaScript</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      style="font-weight: bold; font-size: 1rem"
+                      >JavaScript</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold; font-size:1.25rem;">Contacto</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="font-weight: bold; font-size: 1.25rem"
+                  >Contacto</a
+                >
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex mx-5">
               <input
-                class="form-control me-2"
+                class="form-control me-2 pl-2"
                 type="search"
                 placeholder="Búsqueda"
                 aria-label="Search"
@@ -86,52 +122,134 @@
         </div>
       </nav>
     </header>
+
+
+    <!-- Principal -->
     <main>
+
+      
+      <!-- Sección de Tarjetas -->
+
       <section class="cards">
-        <div class="card-group px-5">
-          <div class="card">
-            <img
-              src="./resources/img/HTML1.png"
-              class="card-img-top"
-              alt="HTML"
-            />
-            <div class="card-body">
-              <h5 class="card-title" style="margin-left: 1rem">HTML</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+        <div class="container mt-5 pb-1">
+          <div class="card-group px-5 mb-5">
+          
+            
+            <!-- Tarjeta HTML -->
+
+            <div class="card">
+              <a href="#">
+              <img
+                src="./resources/img/HTML1.png"
+                class="card-img-top"
+                alt="HTML"
+              />
+              </a>
+              <div class="card-body">
+                
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">
+                  HTML, siglas en inglés de HyperText Markup Language,
+                  hace referencia al lenguaje de marcado para la elaboración de páginas web.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="./resources/img/css.png" class="card-img-top" alt="CSS" />
-            <div class="card-body">
-              <h5 class="card-title" style="margin-left: 1rem">CSS</h5>
-              <p class="card-text">
-                This card has supporting text below as a natural lead-in to
-                additional content.
-              </p>
+
+            <!-- Tarjeta CSS -->
+
+            <div class="card">
+              <a href="#">
+              <img
+                src="./resources/img/css.png"
+                class="card-img-top"
+                alt="CSS"
+              />
+            </a>
+              <div class="card-body">
+                <h5 class="card-title">CSS</h5>
+                <p class="card-text">
+                  CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño
+                  gráfico para definir y crear la presentación de un documento
+                  estructurado escrito en un lenguaje de marcado.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/img/bootstrap1.png"
-              class="card-img-top"
-              alt="Bootstrap"
-            />
-            <div class="card-body">
-              <h5 class="card-title" style="margin-left: 1rem">Bootstrap</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
+
+            <!-- Tarjeta Bootstrap -->
+
+            <div class="card">
+              <a href="#">
+              <img
+                src="./resources/img/bootstrap1.png"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Bootstrap</h5>
+                <p class="card-text">
+                  Bootstrap es una biblioteca multiplataforma o conjunto de
+                  herramientas de código abierto para diseño de sitios y aplicaciones web.
+                </p>
+              </div>
             </div>
+
+
           </div>
         </div>
       </section>
+
+      <!-- Sección de Formularios -->
+
+      <section class="forms">
+        <div class="container mb-4">
+          <h1>Ingresar</h1>
+        </div>
+        <div class="container mb-5">
+          <div class="form-floating mb-3 w-50">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="ejemplo@mail.com"
+            />
+            <div class="container mb-4 pt-2 ">
+              <h6 style="color: rgba(0, 0, 0, 0.5)">Nunca comparta su email.</h6>
+            </div>
+            <label for="floatingInput">Ingresa tu correo electrónico</label>
+          </div>
+          <div class="form-floating w-50">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Ingresa tu contraseña</label>
+          </div>
+          <div class="form-check pt-4" style="margin-left: 1.25rem;font-weight: bold;">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Mentener la sesión iniciada
+            </label>
+          </div>
+          <button type="button" class="btn btn-primary mt-4" style="margin-left: 1.25rem;">Ingresar</button>
+        </div>
+        
+      </section>
+
     </main>
+
+
+    <!-- Footer -->
+
+    <footer class="bg-light text-center">
+      <div class="container p-4"></div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-dark" href="#"> UnicorniaOk & Codo a Codo</a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
